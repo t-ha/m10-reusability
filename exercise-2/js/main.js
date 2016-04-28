@@ -11,9 +11,10 @@ $(function() {
   ];
 
   // Create an instance of your ParagraphChart, setting the color to blue
-
+  var newPC = ParagraphChart().color('blue');
 
   // Select the container div, bind the data (datum) to it,
+  var container = d3.select('#container').datum([data])
   // then call your instantiation of the ParagraphChart function
 
 
